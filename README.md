@@ -1,7 +1,9 @@
-Processo seletivo Intuitive Care
-Para executar o código fornecido, é necessário ter o Python 3.x e o Java instalados em seu sistema
+# Processo seletivo Intuitive Care
+É necessário ter instalado o python 3.x e o Java.
 
-Requerimentos
-Na raiz execute
+# Instalação
+Na raiz execute do projeto:
 
+```
   pip install -r requirements.txt
+```

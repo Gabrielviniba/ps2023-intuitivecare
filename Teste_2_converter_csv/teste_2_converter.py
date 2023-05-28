@@ -21,11 +21,8 @@ def filtrar_arquivos(links, nome_arquivo):
 
 def extrair_tabelas(nome_arquivo):
     dfs = tabula.read_pdf(nome_arquivo, pages='all', lattice=True, multiple_tables=True)
-
-    # Cria um novo dataframe com o primeiro cabeçalho
     primeira_tabela = dfs[0]
     tabelas_unificadas = pd.concat(dfs[1:], ignore_index=True)
-
     return primeira_tabela, tabelas_unificadas
 
 def substituir_palavras(df):
